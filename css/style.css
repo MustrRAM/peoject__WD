@@ -12,6 +12,7 @@ body{
     color: #5c5c5e;
   
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
 html{
