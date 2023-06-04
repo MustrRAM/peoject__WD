@@ -31,6 +31,7 @@ html{
     box-sizing: inherit;
 }
 
+
 h1, h2, h3, h4, h5, h6{
     margin: 0;
     pad: 0;
@@ -183,7 +184,7 @@ button{
 
 .section__title-inner{
     text-align: center;
-    margin-top: 119px;
+    padding-top: 110px;
 }
 
 .section__title{
@@ -219,7 +220,8 @@ button{
 
 
 .about__skills{
-    margin: 100px auto;
+    margin: 0 auto;
+    margin-top: 100px;
 
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -277,14 +279,57 @@ button{
 }
 
 
+/* /.work */
+
+.work{
+    background: #EEEFF1;
+    margin-top: 100px;
+}
+
+.work__video-inner{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 37px;
+    margin-bottom: 100px;
+    background: url(../image/main/video.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-width: 1110px;
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.work__video-image{
+    max-width: 1110px;
+    max-height: 600px;
+    width: 100%;
+}
+
+.work__video-play{
+    margin: 0 auto;
+    cursor: pointer;
+    width: 100px;
+}
 
 
 
 
+.work__images-inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
 
 
-
+.work__items{
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    justify-content: center;
+    gap: 30px;
+}
 
 
 
@@ -314,6 +359,10 @@ button{
         justify-self: center;
         width: 100%;
     }
+
+    .work__items {
+        grid-template-columns: repeat(2, 255px);
+    }
 }
 
 
@@ -321,10 +370,6 @@ button{
 @media(max-width:880px){
     .menu-btn{
         display: flex;
-    }
-
-    .menu__item.menu__item--active {
-        color: #fff;
     }
 
 
@@ -361,6 +406,14 @@ button{
     .top__title{
         order: -1;
     }
+
+    .work__images-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    
 }
 
 @media(max-width:565px){
@@ -400,6 +453,19 @@ button{
 
     .about__skills-subtitle::before{
         width: 250px;
+    }
+
+    .work__video-inner{
+        margin: 0;
+        height: 500px;
+    }
+
+    .work__images-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .work__items {
+        grid-template-columns: repeat(1, 255px);
     }
 
 }
