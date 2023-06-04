@@ -483,6 +483,12 @@ button{
 
 
 @media(max-width:880px){
+
+    .nav{
+        padding-top: 25px;
+    }
+
+
     .menu-btn{
         display: flex;
     }
