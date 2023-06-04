@@ -191,12 +191,14 @@ button{
         color: #fff;
     }
 
+
+
     .menu{
         position: absolute;
         flex-direction: column;
         top: 120px;
         right: 0;
-        width: 320px;
+        width: 305px;
         background: #7d7878;
         color: #fff;
         padding: 100px 0;
